@@ -6,6 +6,32 @@ with [Hugo](https://gohugo.io/) and the
 
 ## Local setup
 
+Packages:
+```bash
+sudo dnf install git gcc gcc-c++ golang
+```
+
+It's recommended  to use a dedicated virtual environment.
+
+Using pyenv:
+
+```bash
+pyenv install 3.12.11
+pyenv local 3.12.11
+```
+
+Create a virtual environment:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+```
+
+Upgrade packaging tools:
+```bash
+pip install --upgrade pip setuptools wheel
+```
+
 **Prerequisites:** Hugo 0.145.0. Install it (and pin the version) via pip:
 
 ```bash
